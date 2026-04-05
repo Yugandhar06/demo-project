@@ -1,0 +1,12 @@
+{
+  "name": "financepro-vercel-demo",
+  "version": "1.0.0",
+  "description": "Finance dashboard demo with plain HTML frontend and Vercel serverless backend",
+  "scripts": {
+    "start": "node dev-server.js",
+    "test": "node --test"
+  },
+  "keywords": ["finance", "dashboard", "vercel"],
+  "author": "",
+  "license": "ISC"
+}

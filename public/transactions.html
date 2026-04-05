@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions | FinancePro</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand"><span>Finance</span>Pro</div>
+        <nav class="nav">
+          <a href="/dashboard">Dashboard</a>
+          <a class="active" href="/transactions">Transactions</a>
+          <a data-min-role="analyst" href="/insights">Insights</a>
+          <a data-min-role="admin" href="/users">Users</a>
+          <a data-min-role="admin" href="/audit-log">Audit Trail</a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-chip">
+            <strong data-user-name>Loading...</strong>
+            <span data-user-role>viewer</span>
+          </div>
+          <button data-logout class="btn secondary">Logout</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="page-header">
+          <div>
+            <h1>Transactions</h1>
+            <p class="subtitle">View, filter, create, edit, and soft-delete financial records.</p>
+          </div>
+        </header>
+
+        <div id="records-message" class="message"></div>
+
+        <section class="panel">
+          <div class="toolbar">
+            <input id="filter-category" placeholder="Search category" />
+            <select id="filter-type">
+              <option value="">All types</option>
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+            <input id="filter-date" type="month" />
+            <button id="filter-button" class="btn secondary">Apply</button>
+          </div>
+
+          <form id="record-form" class="form-grid" data-min-role="admin">
+            <input type="hidden" name="recordId" />
+            <input type="number" name="amount" step="0.01" placeholder="Amount" required />
+            <select name="type" required>
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+            <input type="text" name="category" placeholder="Category" required />
+            <input type="date" name="recordDate" required />
+            <input type="text" name="notes" placeholder="Notes" />
+            <button type="submit" class="btn">Save Record</button>
+          </form>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Category</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                  <th>Notes</th>
+                  <th data-min-role="admin">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="records-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/transactions.js"></script>
+  </body>
+</html>

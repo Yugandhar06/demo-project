@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | FinancePro</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand"><span>Finance</span>Pro</div>
+        <nav class="nav">
+          <a class="active" href="/dashboard">Dashboard</a>
+          <a href="/transactions">Transactions</a>
+          <a data-min-role="analyst" href="/insights">Insights</a>
+          <a data-min-role="admin" href="/users">Users</a>
+          <a data-min-role="admin" href="/audit-log">Audit Trail</a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-chip">
+            <strong data-user-name>Loading...</strong>
+            <span data-user-role>viewer</span>
+          </div>
+          <button data-logout class="btn secondary">Logout</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="page-header">
+          <div>
+            <h1>Overview</h1>
+            <p class="subtitle">Snapshot of income, expenses, categories, and recent activity.</p>
+          </div>
+        </header>
+
+        <section class="cards">
+          <article class="card">
+            <div class="label">Net Balance</div>
+            <div class="value" id="net-balance">$0</div>
+          </article>
+          <article class="card">
+            <div class="label">Total Income</div>
+            <div class="value" id="total-income">$0</div>
+          </article>
+          <article class="card">
+            <div class="label">Total Expenses</div>
+            <div class="value" id="total-expenses">$0</div>
+          </article>
+        </section>
+
+        <section class="grid-2">
+          <article class="panel">
+            <h2>Category Totals</h2>
+            <div id="category-totals" class="chart-bars"></div>
+          </article>
+          <article class="panel">
+            <h2>Recent Activity</h2>
+            <div id="recent-activity" class="list"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/dashboard.js"></script>
+  </body>
+</html>

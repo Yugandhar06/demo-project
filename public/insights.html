@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights | FinancePro</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand"><span>Finance</span>Pro</div>
+        <nav class="nav">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/transactions">Transactions</a>
+          <a class="active" href="/insights">Insights</a>
+          <a data-min-role="admin" href="/users">Users</a>
+          <a data-min-role="admin" href="/audit-log">Audit Trail</a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-chip">
+            <strong data-user-name>Loading...</strong>
+            <span data-user-role>analyst</span>
+          </div>
+          <button data-logout class="btn secondary">Logout</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="page-header">
+          <div>
+            <h1>Advanced Insights</h1>
+            <p class="subtitle">Monthly trends, top categories, and a simple budget snapshot.</p>
+          </div>
+        </header>
+
+        <section class="cards">
+          <article class="card">
+            <div class="label">This Month Spend</div>
+            <div class="value" id="current-month-spend">$0</div>
+          </article>
+          <article class="card">
+            <div class="label">Last Month Spend</div>
+            <div class="value" id="last-month-spend">$0</div>
+          </article>
+          <article class="card">
+            <div class="label">Trend</div>
+            <div class="value" id="trend-value">0%</div>
+          </article>
+          <article class="card">
+            <div class="label">Predicted Next Month</div>
+            <div class="value" id="predicted-spend">$0</div>
+          </article>
+        </section>
+
+        <section class="grid-2">
+          <article class="panel">
+            <h2>Monthly Income vs Expense</h2>
+            <div id="monthly-totals" class="chart-bars"></div>
+          </article>
+          <article class="panel stack">
+            <div>
+              <h2>Top Spending Category</h2>
+              <div id="top-category" class="list"></div>
+            </div>
+            <div>
+              <h2>Budget Status</h2>
+              <div id="budget-status" class="list"></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/insights.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinancePro Login</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="login-shell">
+      <section class="login-card">
+        <div class="brand"><span>Finance</span>Pro</div>
+        <h1>Sign in to your finance dashboard</h1>
+        <p class="helper">
+          This demo uses plain HTML, vanilla JavaScript, and Vercel serverless APIs.
+        </p>
+
+        <div id="login-message" class="message"></div>
+
+        <form id="login-form" class="stack">
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" value="admin@financepro.demo" required />
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input type="password" name="password" value="Admin@123" required />
+          </label>
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <div class="demo-accounts">
+          <strong>Seeded demo accounts</strong>
+          <code>Admin: admin@financepro.demo / Admin@123</code>
+          <code>Analyst: analyst@financepro.demo / Analyst@123</code>
+          <code>Viewer: viewer@financepro.demo / Viewer@123</code>
+        </div>
+      </section>
+    </main>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audit Trail | FinancePro</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand"><span>Finance</span>Pro</div>
+        <nav class="nav">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/transactions">Transactions</a>
+          <a href="/insights">Insights</a>
+          <a href="/users">Users</a>
+          <a class="active" href="/audit-log">Audit Trail</a>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-chip">
+            <strong data-user-name>Loading...</strong>
+            <span data-user-role>admin</span>
+          </div>
+          <button data-logout class="btn secondary">Logout</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="page-header">
+          <div>
+            <h1>Audit Trail</h1>
+            <p class="subtitle">Review login activity, record changes, and user-management events.</p>
+          </div>
+        </header>
+
+        <section class="panel stack">
+          <div id="audit-list" class="list"></div>
+          <button id="load-more-audit" class="btn secondary">Load More</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/audit-log.js"></script>
+  </body>
+</html>

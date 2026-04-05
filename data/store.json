@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Test Admin",
+      "email": "admin@financepro.demo",
+      "passwordHash": "120000:7684d2b9b085cd6e683cd9638389ed17:e607def8d30835425749fcd40d5c2a07a091e121c03cdd5fcea85140e8f7edd35da61b3baecc8ec4849624cc277d6780566434ea1d2c88f2e493e7aba75aca8b",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-04-01T09:00:00.000Z",
+      "updatedAt": "2026-04-01T09:00:00.000Z"
+    },
+    {
+      "id": "usr_analyst",
+      "name": "Demo Analyst",
+      "email": "analyst@financepro.demo",
+      "passwordHash": "120000:550ee39463b7ae4a94da86f5fb6f5ddc:b6785bcd6a41d3404285bde9b9c1a790ea93dcf24cad85ae2d3a14ff638e353f71073a36c8f15917c98beffb1ea71041c575c13b4498f950ecfe6797db13112f",
+      "role": "analyst",
+      "status": "active",
+      "createdAt": "2026-04-01T09:05:00.000Z",
+      "updatedAt": "2026-04-01T09:05:00.000Z"
+    },
+    {
+      "id": "usr_viewer",
+      "name": "Demo Viewer",
+      "email": "viewer@financepro.demo",
+      "passwordHash": "120000:7c4c992838700000099232f9a60f5e57:8f71700f75faf227ceda8fbdb3d82a2ec3d2bbfd685a58a33f176ccdf6f9a8d200a003500734c1d80ba24c9e8b9a830c887d95ae6e96d13f164ec114eb274a56",
+      "role": "viewer",
+      "status": "active",
+      "createdAt": "2026-04-01T09:10:00.000Z",
+      "updatedAt": "2026-04-01T09:10:00.000Z"
+    }
+  ],
+  "records": [
+    {
+      "id": "rec_001",
+      "amount": 12500,
+      "type": "income",
+      "category": "Consulting",
+      "recordDate": "2025-11-10",
+      "notes": "Quarterly consulting payment",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2025-11-10T10:00:00.000Z",
+      "updatedAt": "2025-11-10T10:00:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_002",
+      "amount": 3200,
+      "type": "expense",
+      "category": "Software",
+      "recordDate": "2025-11-18",
+      "notes": "Annual tool renewals",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2025-11-18T11:00:00.000Z",
+      "updatedAt": "2025-11-18T11:00:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_003",
+      "amount": 9800,
+      "type": "income",
+      "category": "Subscriptions",
+      "recordDate": "2025-12-04",
+      "notes": "Recurring platform subscriptions",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2025-12-04T09:15:00.000Z",
+      "updatedAt": "2025-12-04T09:15:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_004",
+      "amount": 4100,
+      "type": "expense",
+      "category": "Payroll",
+      "recordDate": "2025-12-28",
+      "notes": "Contractor payments",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2025-12-28T13:00:00.000Z",
+      "updatedAt": "2025-12-28T13:00:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_005",
+      "amount": 14850,
+      "type": "income",
+      "category": "Consulting",
+      "recordDate": "2026-01-09",
+      "notes": "Enterprise consulting retainer",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-01-09T08:50:00.000Z",
+      "updatedAt": "2026-01-09T08:50:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_006",
+      "amount": 5600,
+      "type": "expense",
+      "category": "Marketing",
+      "recordDate": "2026-01-22",
+      "notes": "Campaign launch",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-01-22T16:40:00.000Z",
+      "updatedAt": "2026-01-22T16:40:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_007",
+      "amount": 11100,
+      "type": "income",
+      "category": "Licensing",
+      "recordDate": "2026-02-14",
+      "notes": "OEM licensing revenue",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-02-14T07:10:00.000Z",
+      "updatedAt": "2026-02-14T07:10:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_008",
+      "amount": 2900,
+      "type": "expense",
+      "category": "Travel",
+      "recordDate": "2026-02-24",
+      "notes": "Client visit and stay",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-02-24T15:20:00.000Z",
+      "updatedAt": "2026-02-24T15:20:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_009",
+      "amount": 12750,
+      "type": "income",
+      "category": "Consulting",
+      "recordDate": "2026-03-10",
+      "notes": "Implementation milestone billing",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-03-10T10:30:00.000Z",
+      "updatedAt": "2026-03-10T10:30:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_010",
+      "amount": 3400,
+      "type": "expense",
+      "category": "Infrastructure",
+      "recordDate": "2026-03-18",
+      "notes": "Cloud hosting and storage",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-03-18T18:05:00.000Z",
+      "updatedAt": "2026-03-18T18:05:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_011",
+      "amount": 13600,
+      "type": "income",
+      "category": "Subscriptions",
+      "recordDate": "2026-04-02",
+      "notes": "Monthly recurring subscriptions",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-04-02T09:30:00.000Z",
+      "updatedAt": "2026-04-02T09:30:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_012",
+      "amount": 5200,
+      "type": "expense",
+      "category": "Payroll",
+      "recordDate": "2026-04-04",
+      "notes": "Monthly team payout",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-04-04T12:25:00.000Z",
+      "updatedAt": "2026-04-04T12:25:00.000Z",
+      "deletedAt": null
+    },
+    {
+      "id": "rec_185725eb2d82",
+      "amount": 56789,
+      "type": "expense",
+      "category": "salary",
+      "recordDate": "2026-04-01",
+      "notes": "fgbh",
+      "createdBy": "usr_admin",
+      "updatedBy": "usr_admin",
+      "createdAt": "2026-04-05T10:36:27.029Z",
+      "updatedAt": "2026-04-05T10:36:27.029Z",
+      "deletedAt": null
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_2eba82fb0e68",
+      "userId": "usr_analyst",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_analyst",
+      "details": "analyst@financepro.demo logged in.",
+      "createdAt": "2026-04-05T10:37:05.626Z"
+    },
+    {
+      "id": "log_648bdd864361",
+      "userId": "usr_admin",
+      "action": "CREATE",
+      "entityType": "record",
+      "entityId": "rec_185725eb2d82",
+      "details": "Created expense record for salary.",
+      "createdAt": "2026-04-05T10:36:27.032Z"
+    },
+    {
+      "id": "log_eb4741c220b5",
+      "userId": "usr_admin",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_admin",
+      "details": "admin@financepro.demo logged in.",
+      "createdAt": "2026-04-05T10:35:43.981Z"
+    },
+    {
+      "id": "log_54426986cae7",
+      "userId": "usr_admin",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_admin",
+      "details": "admin@financepro.demo logged in.",
+      "createdAt": "2026-04-05T10:33:02.752Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ses_50ed7234dfcd",
+      "token": "f4f346c205d5e8fa71ce3615497fb62b64608a376651bd6b",
+      "userId": "usr_admin",
+      "createdAt": "2026-04-05T10:33:02.744Z",
+      "expiresAt": "2026-04-05T22:33:02.744Z"
+    },
+    {
+      "id": "ses_4154e3f34e82",
+      "token": "2a20a6cacc17369d5dc999a3dfee86f5254c88e8e728f542",
+      "userId": "usr_analyst",
+      "createdAt": "2026-04-05T10:37:05.564Z",
+      "expiresAt": "2026-04-05T22:37:05.564Z"
+    }
+  ]
+}
