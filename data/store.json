@@ -204,6 +204,33 @@
   ],
   "auditLogs": [
     {
+      "id": "log_556b97aa2948",
+      "userId": "usr_admin",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_admin",
+      "details": "admin@financepro.demo logged in.",
+      "createdAt": "2026-04-05T12:09:37.761Z"
+    },
+    {
+      "id": "log_4a0891e39ef7",
+      "userId": "usr_admin",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_admin",
+      "details": "admin@financepro.demo logged in.",
+      "createdAt": "2026-04-05T12:08:27.762Z"
+    },
+    {
+      "id": "log_c6eaea45d00f",
+      "userId": "usr_admin",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_admin",
+      "details": "admin@financepro.demo logged in.",
+      "createdAt": "2026-04-05T12:08:06.993Z"
+    },
+    {
       "id": "log_9174edf1e178",
       "userId": "usr_admin",
       "action": "LOGIN",
@@ -263,6 +290,27 @@
       "userId": "usr_analyst",
       "createdAt": "2026-04-05T10:37:05.564Z",
       "expiresAt": "2026-04-05T22:37:05.564Z"
+    },
+    {
+      "id": "ses_45346d7606bf",
+      "token": "4932f69184e8d63dd99db277818c6a4bbd2df68b306b3a87",
+      "userId": "usr_admin",
+      "createdAt": "2026-04-05T12:08:06.991Z",
+      "expiresAt": "2026-04-06T00:08:06.991Z"
+    },
+    {
+      "id": "ses_16ad0e516a9b",
+      "token": "eb1697ecaad6238d324777c6a8ebe9c2a497f6c90e073470",
+      "userId": "usr_admin",
+      "createdAt": "2026-04-05T12:08:27.760Z",
+      "expiresAt": "2026-04-06T00:08:27.760Z"
+    },
+    {
+      "id": "ses_f8b2079cac9c",
+      "token": "fd9ac2187826f46ab773816dc8dd3f7ce265f185e4964130",
+      "userId": "usr_admin",
+      "createdAt": "2026-04-05T12:09:37.756Z",
+      "expiresAt": "2026-04-06T00:09:37.756Z"
     }
   ]
 }
