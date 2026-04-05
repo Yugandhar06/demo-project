@@ -204,6 +204,15 @@
   ],
   "auditLogs": [
     {
+      "id": "log_9174edf1e178",
+      "userId": "usr_admin",
+      "action": "LOGIN",
+      "entityType": "session",
+      "entityId": "usr_admin",
+      "details": "admin@financepro.demo logged in.",
+      "createdAt": "2026-04-05T11:15:09.707Z"
+    },
+    {
       "id": "log_2eba82fb0e68",
       "userId": "usr_analyst",
       "action": "LOGIN",
