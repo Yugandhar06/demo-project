@@ -50,14 +50,14 @@
 
           <form id="record-form" class="form-grid" data-min-role="admin">
             <input type="hidden" name="recordId" />
-            <input type="number" name="amount" step="0.01" placeholder="Amount" required />
+            <input type="number" name="amount" step="0.01" placeholder="Amount" autocomplete="off" required />
             <select name="type" required>
               <option value="income">Income</option>
               <option value="expense">Expense</option>
             </select>
-            <input type="text" name="category" placeholder="Category" required />
-            <input type="date" name="recordDate" required />
-            <input type="text" name="notes" placeholder="Notes" />
+            <input type="text" name="category" placeholder="Category" autocomplete="off" required />
+            <input type="date" name="recordDate" autocomplete="off" required />
+            <input type="text" name="notes" placeholder="Notes" autocomplete="off" />
             <button type="submit" class="btn">Save Record</button>
           </form>
 

@@ -39,9 +39,9 @@
         <section class="panel stack">
           <form id="user-form" class="form-grid">
             <input type="hidden" name="userId" />
-            <input type="text" name="name" placeholder="Full name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <input type="password" name="password" placeholder="Password (leave blank when editing)" />
+            <input type="text" name="name" placeholder="Full name" autocomplete="name" required />
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required />
+            <input type="password" name="password" placeholder="Password (leave blank when editing)" autocomplete="new-password" />
             <select name="role" required>
               <option value="viewer">Viewer</option>
               <option value="analyst">Analyst</option>
