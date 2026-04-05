@@ -22,7 +22,7 @@ function formatDate(value) {
 
 async function apiFetch(url, options = {}) {
   const response = await fetch(url, {
-    credentials: "same-origin",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
       ...(options.headers || {}),
